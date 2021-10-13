@@ -7,7 +7,7 @@ int main()
 {
 	Person p = Person("Nathan", "Totten", "30", 2002);
 
-	p.print();
+	//p.print();
 
 	Person* newP = new Person();
 
@@ -16,9 +16,24 @@ int main()
 	newP->set_birth_year(1945);
 	newP->set_ID_number("X21Y");
 
-	newP->print();
+	//newP->print();
+	
+	Person* comparisonP = new Person("Nathan", "Totten", "30", 2002);
+
+	if (p.operator==(*comparisonP))
+	{
+		cout << "Objects are equal!" << "\n";
+	}
+	else
+	{
+		cout << "Not equal!" << "\n";
+	}
 
 
+	delete newP;
+	delete comparisonP;
+
+	
 
 	return 0;
 }
