@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	Person p = Person("Nathan", "Totten", "30", 2002);
+	Person p("Nathan", "Totten", "30", 2002);
 
 	//p.print();
 
@@ -29,7 +29,7 @@ int main()
 		cout << "Not equal!" << "\n";
 	}
 
-
+	
 	delete newP;
 	delete comparisonP;
 
